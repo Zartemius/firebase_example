@@ -31,6 +31,18 @@ public class OrdersJobService extends JobService {
 
     private void addOrdersToSQLDataBase(Bundle bundle){
         final Order orderObj = getOrderObjectFromBundle(bundle);
+
+        //
+        Log.i("DATA FROM FCM", "Model " + orderObj.getModel()
+                + " Number of order" + orderObj.getNumberOfOrder()
+        + " Type Of Work " + orderObj.getTypeOfWork()
+        + " Description " + orderObj.getDescription()
+        + " Date " + orderObj.getDate()
+        + " Contact person " + orderObj.getContactPerson()
+        + " Phone " + orderObj.getPhone()
+        + " Address " + orderObj.getAddress());
+        //
+
         executor.execute(new Runnable() {
             @Override
             public void run() {
@@ -42,6 +54,7 @@ public class OrdersJobService extends JobService {
 
     private Order getOrderObjectFromBundle(Bundle bundle){
         Order order = new Order();
+        order.setNumberOfOrder(bundle.getString("numberOfOrder"));
         order.setModel(bundle.getString("model"));
         order.setTypeOfWork(bundle.getString("typeOfWork"));
         order.setDescription(bundle.getString("description"));

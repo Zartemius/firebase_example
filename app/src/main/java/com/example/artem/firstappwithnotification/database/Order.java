@@ -8,6 +8,7 @@ public class Order {
 
     @PrimaryKey(autoGenerate = true)
     private int id;
+    private String numberOfOrder;
     private String model;
     private String typeOfWork;
     private String description;
@@ -15,6 +16,10 @@ public class Order {
     private String contactPerson;
     private String phone;
     private String address;
+
+    public String getNumberOfOrder() { return numberOfOrder; }
+
+    public void setNumberOfOrder(String numberOfOrder) { this.numberOfOrder = numberOfOrder; }
 
     public int getId() {
         return id;

@@ -16,4 +16,6 @@ public interface OrderDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     public long insertOrder(Order order);
 
+    @Query("SELECT * FROM orders where id LIKE :id")
+    Order findById(int id);
 }

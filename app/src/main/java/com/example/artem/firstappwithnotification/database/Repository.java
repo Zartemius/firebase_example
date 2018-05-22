@@ -32,5 +32,4 @@ public class Repository {
 
         return orderDao.getOrders();
     }
-
 }
