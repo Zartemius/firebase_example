@@ -27,25 +27,29 @@
             </intent-filter>
         </service>
         <service
-            android:name=".fcm.FirebaseRegistrationTokenService"
+            android:name=".tokenservice.FirebaseRegistrationTokenService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
 
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".mainactivity.MainActivity"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".OrderScreen">
+        <activity android:name=".orderscreen.OrderScreen">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".mainactivity.MainActivity" />
         </activity>
+        <activity android:name=".authentication.LoggingIn">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <activity android:name=".authentication.Registration" />
+        <activity android:name=".authentication.ResetPassword"></activity>
     </application>
 
 </manifest>

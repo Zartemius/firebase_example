@@ -1,14 +1,12 @@
-package com.example.artem.firstappwithnotification.database;
+package com.example.artem.firstappwithnotification.appdatabase;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Room;
 import android.content.Context;
-
 import java.util.List;
 
 
 public class Repository {
-
     private static DataBase dataBase;
     private OrderDao orderDao;
     private static final Object LOCK = new Object();
@@ -21,7 +19,6 @@ public class Repository {
                 }
             }
         }
-
         return dataBase;
     }
 

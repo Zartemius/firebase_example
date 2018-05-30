@@ -3,4 +3,14 @@
     <string name="notifications_admin_channel_name">Global channel</string>
     <string name="notifications_admin_channel_description">Notifications sent from the app admin</string>
     <string name="order">Заявка</string>
+    <string name="registration">Регистрация</string>
+    <string name="loggingIn">Вход</string>
+    <string name="login">Войти</string>
+    <string name="resetPassword">Забыли пароль</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="email">Эл.адрес</string>
+    <string name="password">Пароль</string>
+    <string name="reset">Восстановить пароль</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="get_back">Вернуться обратно</string>
 </resources>

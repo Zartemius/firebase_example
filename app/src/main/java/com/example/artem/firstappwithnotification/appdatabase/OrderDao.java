@@ -1,4 +1,4 @@
-package com.example.artem.firstappwithnotification.database;
+package com.example.artem.firstappwithnotification.appdatabase;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;

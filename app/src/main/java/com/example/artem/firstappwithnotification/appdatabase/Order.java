@@ -1,4 +1,4 @@
-package com.example.artem.firstappwithnotification.database;
+package com.example.artem.firstappwithnotification.appdatabase;
 
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;

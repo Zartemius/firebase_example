@@ -1,7 +1,6 @@
-package com.example.artem.firstappwithnotification.fcm;
+package com.example.artem.firstappwithnotification.tokenservice;
 
 import android.util.Log;
-
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.FirebaseInstanceIdService;
 
@@ -14,12 +13,9 @@ public class FirebaseRegistrationTokenService extends FirebaseInstanceIdService{
     public void onTokenRefresh() {
         String refreshedToken = FirebaseInstanceId.getInstance().getToken();
         Log.i(TAG, "instance id new token is " + refreshedToken);
-
-        ///?? sendtokentoserver
     }
 
     public String getToken(){
-        String refreshedToken = FirebaseInstanceId.getInstance().getToken();
-        return refreshedToken;
+        return FirebaseInstanceId.getInstance().getToken();
     }
 }

@@ -1,4 +1,4 @@
-package com.example.artem.firstappwithnotification;
+package com.example.artem.firstappwithnotification.mainactivity;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -7,7 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import com.example.artem.firstappwithnotification.database.Order;
+
+import com.example.artem.firstappwithnotification.R;
+import com.example.artem.firstappwithnotification.appdatabase.Order;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,7 +40,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.NewViewHolder> {
             super(viewItem);
 
             numberOfOrder = itemView.findViewById(R.id.item_view_holder__numberOfOrder);
-
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -55,7 +56,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.NewViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull NewViewHolder holder, int position) {
-
         Order currentItem = mListOfOrders.get(position);
         String numberOfOrder = currentItem.getNumberOfOrder();
         holder.numberOfOrder.setText(numberOfOrder);

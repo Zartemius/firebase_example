@@ -2,9 +2,9 @@ package com.example.artem.firstappwithnotification.fcm;
 
 import android.os.Bundle;
 import android.util.Log;
-import com.example.artem.firstappwithnotification.database.Order;
-import com.example.artem.firstappwithnotification.database.OrderDao;
-import com.example.artem.firstappwithnotification.database.Repository;
+import com.example.artem.firstappwithnotification.appdatabase.Order;
+import com.example.artem.firstappwithnotification.appdatabase.OrderDao;
+import com.example.artem.firstappwithnotification.appdatabase.Repository;
 import com.firebase.jobdispatcher.JobParameters;
 import com.firebase.jobdispatcher.JobService;
 import java.util.concurrent.Executor;
@@ -13,7 +13,6 @@ import java.util.concurrent.Executors;
 public class OrdersJobService extends JobService {
 
     private static final String TAG = "OrdersJobService";
-
     private final Executor executor = Executors.newFixedThreadPool(2);
     private OrderDao orderDao = Repository.getOrdersDataBase(this).orderDao();
 

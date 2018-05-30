@@ -1,4 +1,4 @@
-package com.example.artem.firstappwithnotification.database;
+package com.example.artem.firstappwithnotification.appdatabase;
 
 import android.arch.persistence.room.Database;
 import android.arch.persistence.room.RoomDatabase;

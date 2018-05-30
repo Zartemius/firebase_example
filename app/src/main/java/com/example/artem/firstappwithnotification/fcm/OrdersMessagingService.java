@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
-import com.example.artem.firstappwithnotification.MainActivity;
+import com.example.artem.firstappwithnotification.mainactivity.MainActivity;
 import com.example.artem.firstappwithnotification.R;
 import com.firebase.jobdispatcher.FirebaseJobDispatcher;
 import com.firebase.jobdispatcher.GooglePlayDriver;

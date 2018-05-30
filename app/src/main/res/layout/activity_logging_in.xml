@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authentication.LoggingIn"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:text="@string/loggingIn"/>
+
+    <ProgressBar
+        android:id="@+id/activity_logging_in__progress_bar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/activity_logging_in__email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:background="#eeeeee"
+        android:hint="@string/email"/>
+
+    <EditText
+        android:id="@+id/activity_logging_in__password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:background="#eeeeee"
+        android:inputType="textPassword"
+        android:hint="@string/password"/>
+
+    <Button
+        android:id="@+id/activity_logging_in__button_to_log_in"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/login"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/activity_logging_in__button_to_register"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/register"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/activity_logging_in__button_to_reset_password"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/resetPassword"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
