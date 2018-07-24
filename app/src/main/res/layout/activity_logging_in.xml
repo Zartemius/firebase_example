@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".authentication.LoggingIn"
+    tools:context=".view.LoggingInActivity"
     android:orientation="vertical">
 
     <TextView
@@ -15,14 +15,6 @@
         android:textColor="@color/black"
         android:textSize="30sp"
         android:text="@string/loggingIn"/>
-
-    <ProgressBar
-        android:id="@+id/activity_logging_in__progress_bar"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:visibility="gone"/>
 
     <EditText
         android:id="@+id/activity_logging_in__email"

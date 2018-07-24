@@ -13,4 +13,25 @@
     <string name="reset">Восстановить пароль</string>
     <string name="forgot_password">Забыли пароль?</string>
     <string name="get_back">Вернуться обратно</string>
+    <string name="enter_email">Введите электронный адрес</string>
+    <string name="enter_password">"Введите пароль"</string>
+    <string name="wrong_password">Неверный пароль</string>
+    <string name="user_was_not_found">Пользователь с таким электронным адресом не найден</string>
+    <string name="mistake_of_authorization">Ошибка авторизации</string>
+    <string name="password_is_too_short">Пароль слишком короткий. Введите минимум 6 знаков!</string>
+    <string name="registration_was_not_successful">Регистрация не прошла</string>
+    <string name="registration_was_successful">Регистрация прошла успешно</string>
+    <string name="password_was_sent_to_your_email">Пароль отправлен на ваш электронный адрес</string>
+    <string name="password_could_not_be_sent">Не удалось отправить пароль на ваш электронный адрес</string>
+    <string name="cause_of_failure">Причина неисправности</string>
+    <string name="spare_parts_used_for_repairs">Запчасти использованные при ремонте</string>
+    <string name="cost_of_repairs">Стоимость ремонта (руб)</string>
+    <string name="time_spend_for_repairs">Время ремонта (мин)</string>
+    <string name="no">нет</string>
+    <string name="load_report"> Загрузить отчёт</string>
+    <string name="not_specified_cause_of_failure">Не указана причина поломки </string>
+    <string name="not_specified__used_spare_parts">Не указаны запчасти использованные при ремонте</string>
+    <string name="not_specified__cost_of_repairs">Не указана стоимость ремонта </string>
+    <string name="not_specified__time_for_repairs">Не указано время затраченное на ремонт</string>
+
 </resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ReportCreation"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/activity_report_creation__cause_of_failure"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:hint="@string/cause_of_failure"/>
+
+    <EditText
+        android:id="@+id/activity_report_creation__used_spare_parts"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="@string/spare_parts_used_for_repairs"/>
+
+    <EditText
+        android:id="@+id/activity_report_creation__cost_of_repairs"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="@string/cost_of_repairs"/>
+
+    <EditText
+        android:id="@+id/activity_report_creation__time_for_repairs"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="@string/time_spend_for_repairs"/>
+
+    <EditText
+        android:id="@+id/activity_report_creation__comments"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="@string/no"/>
+
+    <Button
+        android:id="@+id/activity_report__button_submit__report"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/load_report"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
